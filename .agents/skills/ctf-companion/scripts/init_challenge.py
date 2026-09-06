@@ -20,10 +20,47 @@ CATEGORY_MAP = {
     "reverse": "PWN",
     "reversing": "PWN",
     "osint": "OSINT",
+    "hardware": "Hardware",
+    "hw": "Hardware",
+    "ble": "Hardware",
     "misc": "misc",
 }
 
 SOLVER_TEMPLATES = {
+    "Hardware": '''#!/usr/bin/env python3
+"""
+BLE / Hardware Solver script for: {name} ({category})
+Uses bleak or gratttool to communicate with GATT server.
+"""
+import asyncio
+import sys
+import re
+
+# Bleak-based asynchronous solver
+# python3 -m pip install bleak
+try:
+    from bleak import BleakClient, BleakScanner
+except ImportError:
+    pass
+
+TARGET_MAC_OR_NAME = sys.argv[1] if len(sys.argv) > 1 else "TARGET_BLE_NAME"
+
+def on_notify(sender, data: bytearray):
+    text = data.decode(errors="ignore")
+    print(f"[+] Notification received: {{text}} (hex: {{data.hex()}})")
+
+async def solve_ble():
+    print(f"[*] Scanning/Connecting to: {{TARGET_MAC_OR_NAME}}")
+    # client = BleakClient(TARGET_MAC_OR_NAME)
+    # async with client:
+    #     for s in client.services:
+    #         print(f"Service: {{s.uuid}}")
+    #         for c in s.characteristics:
+    #             print(f"  Char: {{c.uuid}} | Handle: {{c.handle}} | Props: {{c.properties}}")
+
+if __name__ == "__main__":
+    asyncio.run(solve_ble())
+''',
     "Cryptography": '''#!/usr/bin/env python3
 """
 Solver script for: {name} ({category})

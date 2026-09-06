@@ -11,6 +11,7 @@ Challenges are organized by category:
 - `Web/` — Web security (SSTI, SQLi, SSRF, JWT, deserialization, race conditions, auth bypass).
 - `Forensic/` — PCAP network analysis, memory dumps, disk carving, file repair, steganography.
 - `PWN/` — Binary exploitation & Reverse Engineering (stack/heap overflows, ROP, ret2libc, format strings, binary reversing).
+- `Hardware/` — Hardware, IoT, and Bluetooth Low Energy (BLE GATT server hacking via `gratttool`, `gatttool`, `bleak`).
 - `OSINT/` — Open-source intelligence, geolocation, username search, social recon.
 - `misc/` — Sandboxes (Pyjail, rbash), esoteric encodings/languages, audio/radio, logic puzzles.
 
@@ -31,7 +32,7 @@ Each challenge directory should adhere to:
 ```bash
 python3 .agents/skills/ctf-companion/scripts/init_challenge.py <Category> <ChallengeName>
 ```
-*Aliases supported: `crypto`, `web`, `forensics`, `pwn`, `rev`, `osint`, `misc`.*
+*Aliases supported: `crypto`, `web`, `forensics`, `pwn`, `hardware`, `ble`, `rev`, `osint`, `misc`.*
 
 ### Flag & Payload Tools
 ```bash
@@ -96,6 +97,13 @@ python3 .agents/skills/ctf-companion/scripts/flag_tools.py entropy files/artifac
 - **Binary Triage**: `file ./vuln`, `checksec --file=./vuln` (Check NX, PIE, Canary, RELRO).
 - **GDB/pwndbg**: `cyclic 200` -> `cyclic -l <crash_eip>`, `vmmap`, `tele $rsp`, `got`.
 - **ROP / ret2libc**: `pop rdi; ret` -> leak GOT address via `puts()` -> calculate `libc_base` -> trigger `system("/bin/sh")`.
+
+### Hardware & BLE (`gratttool` / `gatttool`)
+- **Scan & Connect**: `gratttool scan` -> `gratttool connect <MAC>` (or `gatttool -b <MAC> -I`).
+- **Enumerate**: `services`, `characteristics`, `char-desc`.
+- **Read & Write**: `read --handle 0x002a`, `write --handle 0x002c --hex 73756e637466`.
+- **Notifications**: Write `0100` to CCCD handle and listen for flag notifications.
+- **Automation**: Use Python `bleak` for asynchronous multi-handle discovery and triggers.
 
 ### Misc & Jails
 - **Pyjail**: Subclasses traversal `().__class__.__base__.__subclasses__()`, bypass forbidden characters via `chr()`, `getattr()`.
