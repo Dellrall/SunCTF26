@@ -1,0 +1,101 @@
+// WARNING: [rz-ghidra] Detected overlap for variable var_100h
+// WARNING: [rz-ghidra] Detected overlap for variable var_ech
+// WARNING: [rz-ghidra] Removing arg arg_274h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_288h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_238h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Detected overlap for variable var_80h
+// WARNING: [rz-ghidra] Detected overlap for variable var_1b0h
+// WARNING: [rz-ghidra] Detected overlap for variable var_82ch
+// WARNING: [rz-ghidra] Detected overlap for variable var_82bh
+// WARNING: [rz-ghidra] Detected overlap for variable var_829h
+// WARNING: [rz-ghidra] Detected overlap for variable var_6b8h
+// WARNING: [rz-ghidra] Detected overlap for variable var_6b0h
+// WARNING: [rz-ghidra] Detected overlap for variable var_dd1h
+// WARNING: [rz-ghidra] Detected overlap for variable var_dd2h
+// WARNING: [rz-ghidra] Detected overlap for variable var_670h
+// WARNING: [rz-ghidra] Detected overlap for variable var_678h
+// WARNING: [rz-ghidra] Detected overlap for variable var_704h
+// WARNING: [rz-ghidra] Detected overlap for variable var_aa2h
+// WARNING: [rz-ghidra] Detected overlap for variable var_aa1h
+
+int64_t func.100020c60(int64_t arg1)
+{
+    uint32_t uVar1;
+    uint32_t uVar2;
+    uint64_t uVar3;
+    uint64_t uVar4;
+    uint64_t uVar5;
+    uint64_t uVar6;
+    int64_t var_83h;
+    int64_t var_70h;
+    int64_t var_60h;
+    undefined uStack_40;
+    unkuint7 Stack_3f;
+    undefined uStack_38;
+    uint32_t uStack_37;
+    undefined2 uStack_33;
+    undefined uStack_31;
+    
+    if (arg1 != 0) {
+        uVar4 = *(uint64_t *)(arg1 + 0x11e0);
+        uVar3 = *(uint64_t *)(arg1 + 0x11e8);
+        if (uVar4 == 0 && uVar3 != 0) {
+            uVar4 = *(uint64_t *)(arg1 + 0x11f8) ^ *(uint64_t *)(arg1 + 0x1200) ^
+                    (*(uint64_t *)(arg1 + 0x1208) >> 0x3d | *(uint64_t *)(arg1 + 0x1208) << 3) ^
+                    *(uint64_t *)(arg1 + 0x11b8);
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb ^
+                    *(int64_t *)(arg1 + 0x11c0) + 0x517cc1b727220a95U;
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb ^
+                    *(int64_t *)(arg1 + 0x11c8) + 0xa2f9836e4e44152aU;
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb ^
+                    *(int64_t *)(arg1 + 0x11d0) + 0xf476452575661fbfU;
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb ^
+                    *(int64_t *)(arg1 + 0x11d8) + 0x45f306dc9c882a54U;
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb ^ 0x976fc893c3aa34e9;
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb ^ uVar3 + 0xe8ec8a4aeacc3f7e;
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb ^
+                    *(int64_t *)(arg1 + 0x11f0) + 0x3a694c0211ee4a13U;
+            uVar4 = (uVar4 >> 0x39 | uVar4 << 7) * -0x61c8864680b583eb;
+            uVar4 = (*(uint64_t *)(arg1 + 0x18) >> 0x17 | *(uint64_t *)(arg1 + 0x18) << 0x29) ^
+                    (uVar4 >> 0x2f | (uVar4 ^ uVar4 >> 0x21) << 0x11) ^ uVar3;
+            uVar5 = (uVar4 ^ uVar4 >> 0x21) * -0xae502812aa7333;
+            uVar6 = uVar5 ^ uVar5 >> 0x1d;
+            uStack_31 = 0xd;
+            uVar1 = (uint32_t)uVar6 ^ (uint32_t)uVar3 ^ 0x7a5eed91;
+            uVar3 = (uVar6 & 0xff00ff00ff00ff00) >> 8 | (uVar6 & 0xff00ff00ff00ff) << 8;
+            uVar4 = uVar3 & 0xffff0000ffff;
+            uVar3 = (uVar3 & 0xffff0000ffff0000) >> 0x10 | uVar4 << 0x10;
+            Stack_3f = (unkuint7)(uint32_t)(uVar3 >> 0x20) | (unkuint7)(uVar3 << 0x20);
+            uVar2 = (uVar1 & 0xff00ff00) >> 8 | (uVar1 & 0xff00ff) << 8;
+            uStack_37 = uVar2 >> 0x10 | uVar2 << 0x10;
+            uStack_40 = 9;
+            uStack_38 = (undefined)(uVar4 >> 8);
+            uStack_33 = 0x7a00;
+            func.100013f6c(arg1, (int64_t)&uStack_40);
+            *(uint64_t *)(arg1 + 0x18) =
+                 (uVar5 >> 0x39 | uVar6 << 7) ^
+                 (*(uint64_t *)(arg1 + 0x18) >> 0x33 | (*(uint64_t *)(arg1 + 0x18) ^ 0x7a0000000cf4e) << 0xd) ^
+                 (uint64_t)uVar1;
+            func.100016c80((void *)arg1);
+            uVar4 = *(uint64_t *)(arg1 + 0x11e0);
+            uVar3 = *(uint64_t *)(arg1 + 0x11e8);
+        }
+        uVar5 = uVar3 ^ uVar4 ^ 0xaf711209f1aa9e55;
+        uVar3 = (uVar5 & 0xff00ff00ff00ff00) >> 8 | (uVar5 & 0xff00ff00ff00ff) << 8;
+        uVar4 = uVar3 & 0xffff0000ffff0000;
+        uVar3 = uVar4 >> 0x10 | (uVar3 & 0xffff0000ffff) << 0x10;
+        Stack_3f = (unkuint7)(uVar3 >> 0x28) | (unkuint7)((uVar3 << 0x20) >> 8);
+        uStack_40 = (undefined)(uVar4 >> 0x30);
+        uStack_38 = 0;
+        uStack_37 = 0;
+        uStack_33 = 0x7f00;
+        uStack_31 = 8;
+        func.100013f6c(arg1, (int64_t)&uStack_40);
+        *(uint64_t *)(arg1 + 0x18) =
+             *(uint64_t *)(arg1 + 0x11e0) ^ (uVar5 >> 0x39 | uVar5 << 7) ^
+             (*(uint64_t *)(arg1 + 0x18) >> 0x33 | (*(uint64_t *)(arg1 + 0x18) ^ 0x7f0000000d7cd) << 0xd);
+        func.100016c80((void *)arg1);
+        arg1 = (int64_t)(*(int64_t *)(arg1 + 0x11f0) == 1);
+    }
+    return arg1;
+}

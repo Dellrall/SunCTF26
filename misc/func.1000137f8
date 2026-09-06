@@ -1,0 +1,473 @@
+// WARNING: Variable defined which should be unmapped: var_2e0h
+// WARNING: Variable defined which should be unmapped: var_20h
+// WARNING: Variable defined which should be unmapped: var_30h
+// WARNING: Variable defined which should be unmapped: var_40h
+// WARNING: Variable defined which should be unmapped: var_50h
+// WARNING: Variable defined which should be unmapped: var_10h
+// WARNING: [rz-ghidra] Detected overlap for variable var_100h
+// WARNING: [rz-ghidra] Detected overlap for variable var_ech
+// WARNING: [rz-ghidra] Removing arg arg_274h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_288h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_238h because it doesn't fit into ProtoModel
+
+void func.1000137f8(void *arg1)
+{
+    uint8_t *puVar1;
+    uint8_t uVar2;
+    void *pvVar3;
+    int64_t iVar4;
+    int64_t iVar5;
+    code *UNRECOVERED_JUMPTABLE;
+    int64_t in_tmp_ldXn;
+    int64_t iVar6;
+    int64_t iVar7;
+    uint64_t uVar8;
+    undefined8 *puVar9;
+    int64_t iVar10;
+    int64_t iVar11;
+    int64_t extraout_x1;
+    int64_t extraout_x1_00;
+    unsigned long long in_x3;
+    unsigned long long in_x4;
+    unsigned long long in_x5;
+    unsigned long long in_x6;
+    int64_t *piVar12;
+    uint64_t uVar13;
+    undefined8 uVar14;
+    undefined8 in_d3;
+    undefined8 in_d4;
+    undefined8 in_d5;
+    undefined auVar15 [16];
+    int64_t var_360h;
+    void *s2;
+    int64_t var_338h;
+    void *pvStackY_330;
+    undefined8 uStackY_328;
+    int64_t var_320h;
+    undefined8 uStackY_318;
+    undefined8 uStackY_310;
+    undefined8 uStackY_308;
+    int64_t var_300h;
+    undefined8 uStackY_2f8;
+    int64_t iStackY_2f0;
+    undefined8 uStackY_2e8;
+    int64_t var_2e0h;
+    undefined8 uStack_2d8;
+    undefined8 uStack_2d0;
+    undefined8 uStack_2c8;
+    int64_t var_2c0h;
+    undefined8 uStack_2b8;
+    undefined8 uStack_2b0;
+    undefined8 uStack_2a8;
+    undefined8 uStack_2a0;
+    undefined8 uStack_298;
+    undefined8 uStack_290;
+    undefined8 uStack_288;
+    undefined8 uStack_280;
+    undefined8 uStack_278;
+    uint64_t uStack_270;
+    uint64_t uStack_268;
+    undefined8 uStack_260;
+    undefined8 uStack_258;
+    undefined8 uStack_250;
+    undefined8 uStack_248;
+    undefined8 uStack_240;
+    undefined8 uStack_238;
+    undefined8 uStack_230;
+    undefined8 uStack_228;
+    undefined8 uStack_220;
+    undefined8 uStack_218;
+    undefined8 uStack_210;
+    undefined8 uStack_208;
+    undefined8 uStack_200;
+    undefined8 uStack_1f8;
+    undefined8 uStack_1f0;
+    undefined8 uStack_1e8;
+    undefined8 uStack_1e0;
+    undefined8 uStack_1d8;
+    undefined8 uStack_1d0;
+    undefined8 uStack_1c8;
+    undefined8 uStack_1c0;
+    undefined8 uStack_1b8;
+    undefined8 uStack_1b0;
+    undefined8 uStack_1a8;
+    undefined8 uStack_1a0;
+    undefined8 uStack_198;
+    undefined8 uStack_190;
+    int64_t var_180h;
+    int64_t var_178h;
+    void *pvStack_170;
+    uint64_t uStack_168;
+    int64_t var_160h;
+    undefined8 uStack_158;
+    undefined8 uStack_150;
+    undefined8 uStack_148;
+    int64_t var_140h;
+    int64_t *piStack_138;
+    int64_t var_130h;
+    undefined8 uStack_128;
+    int64_t var_120h;
+    undefined8 uStack_118;
+    undefined8 uStack_110;
+    undefined8 uStack_108;
+    int64_t var_100h;
+    undefined8 uStack_f8;
+    int64_t iStack_f0;
+    int64_t iStack_e8;
+    undefined8 uStack_e0;
+    undefined8 uStack_d8;
+    int64_t iStack_d0;
+    undefined8 uStack_c8;
+    undefined8 uStack_c0;
+    undefined8 uStack_b8;
+    int64_t iStack_b0;
+    int64_t *piStack_a8;
+    undefined4 uStack_a0;
+    undefined4 uStack_9c;
+    undefined8 *puStack_90;
+    int64_t iStack_88;
+    undefined8 uStack_80;
+    undefined8 uStack_78;
+    int64_t iStack_70;
+    int64_t var_50h;
+    int64_t var_40h;
+    int64_t var_30h;
+    int64_t var_20h;
+    int64_t var_10h;
+    
+    iVar7 = malloc(0x134);
+    if (iVar7 != 0) {
+        s2 = (void *)0x134;
+        pvStackY_330 = (void *)0x0;
+        var_338h = iVar7;
+        do {
+            pvVar3 = pvStackY_330;
+            uVar2 = *(uint8_t *)((int64_t)pvStackY_330 + 0x1000f6c8e);
+            if (pvStackY_330 == s2) {
+                func.1000ec270((int64_t)&s2);
+                iVar7 = var_338h;
+            }
+            *(uint8_t *)(iVar7 + (int64_t)pvVar3) =
+                 ((uint8_t)pvVar3 & 0xf) * '\x17' + (char)((uint64_t)pvVar3 >> 4) * '1' + 0xa7 ^ uVar2;
+            pvStackY_330 = (void *)((int64_t)pvVar3 + 1);
+        } while (pvStackY_330 != (void *)0x134);
+        iVar7 = 0;
+        uVar13 = 0xcbf29ce484222325;
+        do {
+            puVar1 = (uint8_t *)(var_338h + iVar7);
+            iVar7 = iVar7 + 1;
+            uVar13 = (uVar13 ^ *puVar1) * 0x1000000001b3;
+            uVar13 = uVar13 ^ uVar13 >> 0x1f;
+        } while (iVar7 != 0x134);
+        if (s2 != (void *)0x0) {
+            free();
+        }
+        func.10004e554((int64_t)&s2);
+        iVar7 = malloc(0x134);
+        if (iVar7 != 0) {
+            var_180h = 0x134;
+            pvStack_170 = (void *)0x0;
+            var_178h = iVar7;
+            do {
+                uVar8 = (uint64_t)pvStack_170;
+                uVar2 = *(uint8_t *)((int64_t)pvStack_170 + 0x1000f6c8e);
+                if (pvStack_170 == (void *)var_180h) {
+                    func.1000ec270((int64_t)&var_180h);
+                    iVar7 = var_178h;
+                }
+                iVar5 = var_178h;
+                iVar4 = var_180h;
+                *(uint8_t *)(iVar7 + uVar8) = ((uint8_t)uVar8 & 0xf) * '\x17' + (char)(uVar8 >> 4) * '1' + 0xa7 ^ uVar2;
+                pvStack_170 = (void *)(uVar8 + 1);
+            } while (pvStack_170 != (void *)0x134);
+            uVar8 = malloc(0x134);
+            if (uVar8 != 0) {
+                memcpy(uVar8, iVar5, 0x134);
+                var_180h = 0x10010d5c8;
+                uStack_168 = uVar8;
+                if ((uVar8 & 1) == 0) {
+                    uStack_168 = uVar8 + 1;
+                    var_180h = 0x10010d5f0;
+                }
+                pvStack_170 = (void *)0x134;
+                var_178h = uVar8;
+                func.10004b434((int64_t)&iStack_f0, (int64_t)&var_180h);
+                var_178h = iStack_e8;
+                var_180h = iStack_f0;
+                uStack_168 = uStack_d8;
+                pvStack_170 = (void *)uStack_e0;
+                uStack_158 = uStack_c8;
+                var_160h = iStack_d0;
+                uStack_148 = uStack_b8;
+                uStack_150 = uStack_c0;
+                puVar9 = (undefined8 *)malloc(0x88);
+                if (puVar9 == (undefined8 *)0x0) {
+    // WARNING: Subroutine does not return
+                    func.1000ec138(8, 0x88);
+                }
+                puVar9[1] = 1;
+                *puVar9 = 1;
+                puVar9[3] = var_178h;
+                puVar9[2] = var_180h;
+                puVar9[5] = uStack_168;
+                puVar9[4] = pvStack_170;
+                puVar9[7] = uStack_158;
+                puVar9[6] = var_160h;
+                puVar9[9] = uStack_148;
+                puVar9[8] = uStack_150;
+                puVar9[10] = 0x134;
+                puVar9[0xf] = 3;
+                *(undefined *)(puVar9 + 0x10) = 0;
+                uVar14 = pvStack_170;
+                if (in_tmp_ldXn == 0) {
+                    iVar7 = **(int64_t **)0x100114e20;
+                    **(int64_t **)0x100114e20 = iVar7 + 1;
+                    piVar12 = *(int64_t **)0x100114e20;
+                } else {
+                    func.1000ea18c();
+                    iVar7 = **(int64_t **)0x100114e20;
+                    **(int64_t **)0x100114e20 = iVar7 + 1;
+                    piVar12 = *(int64_t **)0x100114e20;
+                }
+                *(int64_t **)0x100114e20 = piVar12;
+                if (-1 < iVar7) {
+                    var_178h = 0;
+                    var_180h = 0;
+                    uStack_168 = 0;
+                    pvStack_170 = (void *)0x0;
+                    uStack_158 = 0xc003c7dcb27d7e92;
+                    var_160h = 0x3c23f7860146d2c5;
+                    uStack_148 = 0x70a4855d04d8fa7b;
+                    uStack_150 = 0x3b2782ca53b600e5;
+                    puStack_90 = puVar9;
+                    if (puVar9[0xf] != 0) {
+                        func.1000ea1f4((int64_t)(puVar9 + 0xb), (int64_t)&puStack_90);
+                    }
+                    uStack_c8 = puVar9[0xc];
+                    iStack_d0 = puVar9[0xb];
+                    uStack_b8 = puVar9[0xe];
+                    uStack_c0 = puVar9[0xd];
+                    iStack_e8 = var_178h;
+                    iStack_f0 = var_180h;
+                    uStack_d8 = uStack_168;
+                    uStack_e0 = pvStack_170;
+                    uStack_a0 = 0;
+                    iStack_b0 = 0;
+                    iVar7 = *piVar12;
+                    *piVar12 = iVar7 + -1;
+                    LORelease();
+                    piStack_a8 = puVar9;
+                    if (iVar7 == 1) {
+                        DataMemoryBarrier(2, 1);
+                        func.10004b7a4((int64_t)piVar12);
+                    }
+                    func.1000093ec((int64_t)&s2, (int64_t)&iStack_f0, uVar14, in_x3, in_x4, var_2e0h);
+                    func.10001e2f0((int64_t)&var_180h, (int64_t)&uStackY_328, 0x1000f6c3e, in_x3, in_d4, in_x5);
+                    if (var_180h == 0) {
+                        puStack_90 = (undefined8 *)0x0;
+                    } else {
+                        puStack_90 = (undefined8 *)var_180h;
+                        uStack_78 = uStack_168;
+                        iStack_70 = var_160h;
+                    }
+                    uStack_80 = pvStack_170;
+                    iStack_88 = var_178h;
+                    iVar10 = func.100017df4((int64_t)&puStack_90);
+                    uStack_158 = uStack_c8;
+                    var_160h = iStack_d0;
+                    uStack_148 = uStack_b8;
+                    uStack_150 = uStack_c0;
+                    piStack_138 = piStack_a8;
+                    var_140h = iStack_b0;
+                    var_130h = CONCAT44(uStack_9c, uStack_a0);
+                    var_178h = iStack_e8;
+                    var_180h = iStack_f0;
+                    uStack_168 = uStack_d8;
+                    pvStack_170 = (void *)uStack_e0;
+                    piVar12 = *(int64_t **)(iVar10 + 0x70);
+                    if (piVar12 != (int64_t *)0x0) {
+                        iVar7 = *piVar12;
+                        *piVar12 = iVar7 + -1;
+                        LORelease();
+                        if (iVar7 == 1) {
+                            DataMemoryBarrier(2, 1);
+                            func.10004b7a4(*(int64_t *)(iVar10 + 0x70));
+                        }
+                    }
+                    *(undefined8 *)(iVar10 + 0x50) = uStack_158;
+                    *(int64_t *)(iVar10 + 0x48) = var_160h;
+                    *(undefined8 *)(iVar10 + 0x60) = uStack_148;
+                    *(undefined8 *)(iVar10 + 0x58) = uStack_150;
+                    *(int64_t **)(iVar10 + 0x70) = piStack_138;
+                    *(int64_t *)(iVar10 + 0x68) = var_140h;
+                    *(int64_t *)(iVar10 + 0x78) = var_130h;
+                    *(int64_t *)(iVar10 + 0x30) = var_178h;
+                    *(int64_t *)(iVar10 + 0x28) = var_180h;
+                    *(uint64_t *)(iVar10 + 0x40) = uStack_168;
+                    *(void **)(iVar10 + 0x38) = pvStack_170;
+                    if (*(char *)(iVar10 + 0x80) == '\0') {
+                        *(undefined *)(iVar10 + 0x80) = 3;
+                    }
+                    if (iVar7 == 0) {
+                        iVar7 = **(int64_t **)0x100114e20;
+                        **(int64_t **)0x100114e20 = iVar7 + 1;
+                    } else {
+                        func.1000ea18c();
+                        iVar7 = **(int64_t **)0x100114e20;
+                        **(int64_t **)0x100114e20 = iVar7 + 1;
+                    }
+                    if (-1 < iVar7) {
+                        uStack_c8 = 0xc003c7dcb27d7e92;
+                        iStack_d0 = 0x3c23f7860146d2c5;
+                        uStack_b8 = 0x70a4855d04d8fa7b;
+                        uStack_c0 = 0x3b2782ca53b600e5;
+                        uStack_a0 = 0;
+                        iStack_b0 = 0;
+                        uStack_e0 = 0;
+                        uStack_d8 = 0;
+                        iStack_f0 = -1;
+                        iStack_e8 = -1;
+                        piStack_a8 = *(int64_t **)0x100114e20;
+                        func.1000093ec((int64_t)&s2, (int64_t)&iStack_f0, uVar14, in_x3, in_x4, var_2e0h);
+                        iVar7 = 0x1000f6c52;
+                        func.10001e2f0((int64_t)&var_180h, (int64_t)&uStackY_328, 0x1000f6c52, in_x3, in_d4, in_x5);
+                        if (var_180h == 0) {
+                            puStack_90 = (undefined8 *)0x0;
+                        } else {
+                            puStack_90 = (undefined8 *)var_180h;
+                            uStack_78 = uStack_168;
+                            iStack_70 = var_160h;
+                        }
+                        uStack_80 = pvStack_170;
+                        iStack_88 = var_178h;
+                        auVar15 = func.100017df4((int64_t)&puStack_90);
+                        iVar10 = auVar15._8_8_;
+                        iVar11 = auVar15._0_8_;
+                        uStack_158 = uStack_c8;
+                        var_160h = iStack_d0;
+                        uStack_148 = uStack_b8;
+                        uStack_150 = uStack_c0;
+                        piStack_138 = piStack_a8;
+                        var_140h = iStack_b0;
+                        var_130h = CONCAT44(uStack_9c, uStack_a0);
+                        var_178h = iStack_e8;
+                        var_180h = iStack_f0;
+                        uStack_168 = uStack_d8;
+                        pvStack_170 = (void *)uStack_e0;
+                        piVar12 = *(int64_t **)(iVar11 + 0x70);
+                        if (piVar12 != (int64_t *)0x0) {
+                            iVar6 = *piVar12;
+                            *piVar12 = iVar6 + -1;
+                            LORelease();
+                            if (iVar6 == 1) {
+                                DataMemoryBarrier(2, 1);
+                                func.10004b7a4(*(int64_t *)(iVar11 + 0x70));
+                                iVar10 = extraout_x1;
+                            }
+                        }
+                        *(undefined8 *)(iVar11 + 0x50) = uStack_158;
+                        *(int64_t *)(iVar11 + 0x48) = var_160h;
+                        *(undefined8 *)(iVar11 + 0x60) = uStack_148;
+                        *(undefined8 *)(iVar11 + 0x58) = uStack_150;
+                        *(int64_t **)(iVar11 + 0x70) = piStack_138;
+                        *(int64_t *)(iVar11 + 0x68) = var_140h;
+                        *(int64_t *)(iVar11 + 0x78) = var_130h;
+                        *(int64_t *)(iVar11 + 0x30) = var_178h;
+                        *(int64_t *)(iVar11 + 0x28) = var_180h;
+                        *(uint64_t *)(iVar11 + 0x40) = uStack_168;
+                        *(void **)(iVar11 + 0x38) = pvStack_170;
+                        if (*(char *)(iVar11 + 0x80) == '\0') {
+                            *(undefined *)(iVar11 + 0x80) = 3;
+                        }
+                        uStack_118 = uStack_2d8;
+                        var_120h = var_2e0h;
+                        uStack_108 = uStack_2c8;
+                        uStack_110 = uStack_2d0;
+                        uStack_f8 = uStack_2b8;
+                        var_100h = var_2c0h;
+                        uStack_158 = uStackY_318;
+                        var_160h = var_320h;
+                        uStack_148 = uStackY_308;
+                        uStack_150 = uStackY_310;
+                        piStack_138 = (int64_t *)uStackY_2f8;
+                        var_140h = var_300h;
+                        uStack_128 = uStackY_2e8;
+                        iStackY_2f0 = var_130h;
+                        var_178h = var_338h;
+                        var_180h = (int64_t)s2;
+                        uStack_168 = uStackY_328;
+                        pvStack_170 = pvStackY_330;
+                        if (iVar4 != 0) {
+                            free(iVar5);
+                            iVar10 = extraout_x1_00;
+                        }
+                        uStack_298 = 0;
+                        uStack_2a0 = 0;
+                        uStack_288 = 0;
+                        uStack_290 = 0;
+                        uStack_278 = 0;
+                        uStack_280 = 0;
+                        uStack_270 = uVar13 ^ 0x80c275647fd89b13;
+                        uStack_2d8 = uStack_118;
+                        var_2e0h = var_120h;
+                        uStack_2c8 = uStack_108;
+                        uStack_2d0 = uStack_110;
+                        uStack_2b8 = uStack_f8;
+                        var_2c0h = var_100h;
+                        uStack_2a8 = 0;
+                        uStack_2b0 = 0;
+                        uStackY_318 = uStack_158;
+                        var_320h = var_160h;
+                        uStackY_308 = uStack_148;
+                        uStackY_310 = uStack_150;
+                        uStackY_2f8 = piStack_138;
+                        var_300h = var_140h;
+                        uStackY_2e8 = uStack_128;
+                        iStackY_2f0 = var_130h;
+                        var_338h = var_178h;
+                        s2 = (void *)var_180h;
+                        uStackY_328 = uStack_168;
+                        pvStackY_330 = pvStack_170;
+                        uStack_258 = 0;
+                        uStack_260 = 0;
+                        uStack_248 = 0;
+                        uStack_250 = 0;
+                        uStack_238 = 0;
+                        uStack_240 = 0;
+                        uStack_228 = 0;
+                        uStack_230 = 0;
+                        uStack_218 = 0;
+                        uStack_220 = 0;
+                        uStack_208 = 0;
+                        uStack_210 = 0;
+                        uStack_1f8 = 0;
+                        uStack_200 = 0;
+                        uStack_1e8 = 0;
+                        uStack_1f0 = 0;
+                        uStack_1d8 = 0;
+                        uStack_1e0 = 0;
+                        uStack_1c8 = 0;
+                        uStack_1d0 = 0;
+                        uStack_1b8 = 0;
+                        uStack_1c0 = 0;
+                        uStack_1a8 = 0;
+                        uStack_1b0 = 0;
+                        uStack_198 = 0;
+                        uStack_1a0 = 0;
+                        uStack_190 = 0;
+                        uStack_268 = uVar13;
+                        func.1000135d8((int64_t)&s2, iVar10, iVar7, in_d3, in_x4, in_d5, in_x6);
+                        memcpy(arg1, &s2, 0x1b8);
+                        return;
+                    }
+                }
+    // WARNING: Treating indirect jump as call
+                UNRECOVERED_JUMPTABLE = (code *)SoftwareBreakpoint(1, 0x100013d98);
+                (*UNRECOVERED_JUMPTABLE)();
+                return;
+            }
+        }
+    }
+    // WARNING: Subroutine does not return
+    func.1000ec150(1, 0x134);
+}
