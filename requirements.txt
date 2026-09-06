@@ -1,0 +1,35 @@
+# CTF Python Dependencies
+
+# Binary Exploitation & Reverse Engineering
+pwntools>=4.13.0
+ropper
+capstone
+
+# Cryptography & Math
+pycryptodome>=3.20.0
+cryptography>=42.0.0
+sympy>=1.12
+gmpy2>=2.1.5
+owiener
+randcrack
+z3-solver>=4.12.0
+
+# Web Security & Networking
+requests>=2.31.0
+httpx>=0.27.0
+beautifulsoup4>=4.12.0
+flask-unsign
+pyjwt>=2.8.0
+websockets>=12.0
+
+# Forensics, Packets & Steganography
+scapy>=2.5.0
+pillow>=10.0.0
+pypdf>=4.0.0
+
+# Hardware & Bluetooth Low Energy (BLE)
+bleak>=0.21.0
+
+# General Utilities & Terminal UI
+rich>=13.7.0
+tqdm>=4.66.0

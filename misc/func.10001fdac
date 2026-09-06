@@ -1,0 +1,18 @@
+int64_t func.10001fdac(void)
+{
+    int64_t iVar1;
+    undefined auStack_1338 [792];
+    undefined8 uStack_1020;
+    void *s2;
+    int64_t var_10h;
+    
+    uStack_1020 = 0;
+    func.100016e70((int64_t)auStack_1338);
+    iVar1 = malloc(0x1318);
+    if (iVar1 != 0) {
+        memcpy(iVar1, auStack_1338, 0x1318);
+        return iVar1;
+    }
+    // WARNING: Subroutine does not return
+    func.1000ec138(8, 0x1318);
+}

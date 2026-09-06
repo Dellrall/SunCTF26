@@ -1,0 +1,20 @@
+// WARNING: [rz-ghidra] Detected overlap for variable var_100h
+// WARNING: [rz-ghidra] Detected overlap for variable var_ech
+// WARNING: [rz-ghidra] Removing arg arg_274h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_288h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_238h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Detected overlap for variable var_474h
+
+void func.100013310 noreturn (void)
+{
+    void *ptr;
+    int64_t arg1;
+    int64_t var_a0h;
+    
+    ptr = (void *)func.10001fdac();
+    arg1 = func.1000e926c((int64_t)ptr);
+    func.10001fa14(ptr);
+    // WARNING: Subroutine does not return
+    func.1000e6b10(arg1);
+}
+

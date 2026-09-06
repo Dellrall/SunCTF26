@@ -1,0 +1,274 @@
+
+// WARNING: Variable defined which should be unmapped: var_440h
+// WARNING: Variable defined which should be unmapped: var_20h
+// WARNING: Variable defined which should be unmapped: var_30h
+// WARNING: Variable defined which should be unmapped: var_40h
+// WARNING: Variable defined which should be unmapped: var_50h
+// WARNING: Variable defined which should be unmapped: var_60h
+// WARNING: Variable defined which should be unmapped: var_10h
+// WARNING: Variable defined which should be unmapped: var_70h
+// WARNING: [rz-ghidra] Detected overlap for variable var_100h
+// WARNING: [rz-ghidra] Detected overlap for variable var_ech
+// WARNING: [rz-ghidra] Removing arg arg_274h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_288h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Removing arg arg_238h because it doesn't fit into ProtoModel
+// WARNING: [rz-ghidra] Detected overlap for variable var_474h
+// WARNING: [rz-ghidra] Detected overlap for variable var_22h
+// WARNING: [rz-ghidra] Detected overlap for variable var_7eh
+// WARNING: [rz-ghidra] Detected overlap for variable var_240h
+// WARNING: [rz-ghidra] Detected overlap for variable var_231h
+// WARNING: [rz-ghidra] Detected overlap for variable var_232h
+// WARNING: [rz-ghidra] Detected overlap for variable var_233h
+// WARNING: [rz-ghidra] Detected overlap for variable var_234h
+// WARNING: [rz-ghidra] Detected overlap for variable var_235h
+// WARNING: [rz-ghidra] Detected overlap for variable var_236h
+// WARNING: [rz-ghidra] Detected overlap for variable var_237h
+// WARNING: [rz-ghidra] Detected overlap for variable var_238h
+// WARNING: [rz-ghidra] Detected overlap for variable var_239h
+// WARNING: [rz-ghidra] Detected overlap for variable var_23ah
+// WARNING: [rz-ghidra] Detected overlap for variable var_23bh
+// WARNING: [rz-ghidra] Detected overlap for variable var_24ch
+// WARNING: [rz-ghidra] Detected overlap for variable var_258h
+// WARNING: [rz-ghidra] Detected overlap for variable var_25ch
+// WARNING: [rz-ghidra] Detected overlap for variable var_26ch
+// WARNING: [rz-ghidra] Detected overlap for variable var_268h
+// WARNING: [rz-ghidra] Detected overlap for variable var_80h
+// WARNING: [rz-ghidra] Detected overlap for variable var_53h
+
+undefined8 func.1000e926c(int64_t arg1)
+{
+    int32_t iVar1;
+    int64_t iVar2;
+    uint64_t uVar3;
+    unsigned long long extraout_x1;
+    unsigned long long extraout_x1_00;
+    unsigned long long extraout_x1_01;
+    unsigned long long extraout_x1_02;
+    unsigned long long extraout_x1_03;
+    unsigned long long extraout_x1_04;
+    unsigned long long extraout_x1_05;
+    unsigned long long arg2;
+    unsigned long long in_x3;
+    int64_t in_x4;
+    unsigned long long in_x5;
+    int64_t iVar4;
+    int64_t *extraout_x10;
+    int64_t *piVar5;
+    undefined8 *puVar6;
+    float fVar7;
+    float fVar8;
+    float in_s2;
+    undefined4 in_d2;
+    float fVar9;
+    undefined8 uVar10;
+    int64_t var_484h;
+    undefined4 var_474h;
+    int64_t var_470h;
+    undefined8 uStackY_468;
+    undefined8 uStackY_460;
+    int64_t var_450h;
+    undefined8 uStackY_448;
+    int64_t var_440h;
+    void *s;
+    int64_t var_430h;
+    int64_t *piStack_428;
+    int64_t iStack_420;
+    int64_t var_418h;
+    undefined8 *puStack_410;
+    int64_t var_408h;
+    double dStack_400;
+    double dStack_3f8;
+    undefined8 uStack_200;
+    undefined8 uStack_1f8;
+    undefined auStack_1f0 [296];
+    undefined8 uStack_c8;
+    int64_t iStack_c0;
+    undefined8 uStack_b8;
+    undefined8 *puStack_b0;
+    undefined8 uStack_a8;
+    undefined8 uStack_a0;
+    undefined8 uStack_98;
+    undefined8 uStack_90;
+    undefined4 uStack_88;
+    int64_t var_70h;
+    int64_t var_60h;
+    int64_t var_50h;
+    int64_t var_40h;
+    int64_t var_30h;
+    int64_t var_20h;
+    int64_t var_10h;
+    
+    time(0);
+    srand();
+    uStack_90 = 0;
+    uStack_98 = 0;
+    uStack_88 = 0;
+    uStack_a0 = 0;
+    uStack_a8 = 0;
+    bzero(&s, 0x378);
+    iVar2 = malloc(72000);
+    if (iVar2 == 0) {
+        func.1000f4f30();
+    } else {
+        uStack_b8 = 72000;
+        iVar4 = 1000;
+        puVar6 = (undefined8 *)(iVar2 + 0x48);
+        piVar5 = extraout_x10;
+        do {
+            puStack_b0 = puVar6;
+            puStack_b0[-9] = piVar5;
+            piVar5 = puStack_b0 + 0x12;
+            *piVar5 = (int64_t)(puStack_b0 + 9);
+            *puStack_b0 = puStack_b0 + -9;
+            puStack_b0[9] = puStack_b0;
+            iVar4 = iVar4 + -4;
+            puVar6 = puStack_b0 + 0x24;
+        } while (iVar4 != 0);
+        puStack_b0 = puStack_b0 + 0x12;
+        piStack_428 = &iStack_c0;
+        iStack_c0 = iVar2;
+        iVar2 = malloc(0x1f48);
+        if (iVar2 != 0) {
+            var_418h = (int64_t)&uStack_98;
+            puStack_410 = &uStack_a8;
+            iStack_420 = iVar2;
+            var_408h = arg1;
+            func.1000e9110(&s);
+            SetConfigFlags(0x20);
+            InitWindow(800, 600, "Asteroids Redux");
+            LoadImageFromMemory(".png", 0x1001150c8, *(undefined4 *)0x1001203f4);
+            uStackY_468 = uStackY_448;
+            var_470h = var_450h;
+            uStackY_460 = var_440h;
+            uVar3 = IsImageValid(&var_470h);
+            if ((uVar3 & 1) == 0) {
+                in_x3 = *___stderrp;
+                fwrite("Image is not valid\n", 0x13, 1);
+            }
+            uStackY_468 = uStackY_448;
+            var_470h = var_450h;
+            uStackY_460 = var_440h;
+            LoadTextureFromImage(&var_470h);
+            uStackY_460 = CONCAT44(uStackY_460._4_4_, var_474h);
+            uVar3 = IsTextureValid(&var_470h);
+            if ((uVar3 & 1) != 0) {
+                uStackY_460 = CONCAT44(uStackY_460._4_4_, var_474h);
+                SetTextureFilter(&var_470h, 1);
+                SetTargetFPS(0x3c);
+                uVar3 = WindowShouldClose();
+                if ((uVar3 & 1) == 0) {
+                    uVar10 = NEON_fmov(0x41400000, 4);
+                    do {
+                        BeginDrawing();
+                        ClearBackground(0xff000000);
+                        dStack_400 = (double)GetTime();
+                        arg2 = extraout_x1;
+                        if (((uint8_t)s & 1) == 0) {
+                            if ((s._1_1_ & 1) == 0) {
+                                uVar3 = IsKeyPressed(0x45);
+                                if ((uVar3 & 1) == 0) {
+                                    if ((s._1_1_ & 1) != 0) goto code_r0x0001000e94d8;
+                                    goto code_r0x0001000e9520;
+                                }
+                                func.10001ffd0(var_408h, var_430h);
+                                s._1_1_ = 1;
+                                arg2 = extraout_x1_01;
+                            } else {
+code_r0x0001000e94d8:
+                                iVar1 = IsKeyPressed(0x101);
+                                if (iVar1 == 0) {
+code_r0x0001000e9520:
+                                    iVar1 = IsKeyPressed(0x46);
+                                    arg2 = extraout_x1_02;
+                                    if ((iVar1 != 0) &&
+                                       (iVar1 = func.100020c60(var_408h), arg2 = extraout_x1_03, iVar1 != 0)) {
+                                        s._0_1_ = 1;
+                                        s._2_1_ = 1;
+                                        uStack_c8 = GetTime();
+                                        *(undefined *)(var_418h + 0x10) = 0;
+                                        arg2 = extraout_x1_04;
+                                    }
+                                } else {
+                                    func.10001fe3c(var_408h, var_430h);
+                                    s._1_1_ = 0;
+                                    arg2 = extraout_x1_00;
+                                }
+                            }
+                        }
+                        if ((((uint8_t)s & 1) == 0) && ((s._1_1_ & 1) == 0)) {
+                            var_430h = var_430h + 1;
+                            if (0x960 < (uint64_t)var_430h) {
+                                s._0_1_ = 1;
+                                *(undefined *)(var_418h + 0x10) = 1;
+                            }
+                            func.100020ae0(var_408h, var_430h);
+                            if (5.0 < dStack_400 - dStack_3f8) {
+                                func.1000e70e0(&s);
+                                dStack_3f8 = dStack_400;
+                            }
+                            func.1000e733c(&s);
+                            arg2 = extraout_x1_05;
+                        }
+                        if ((s._1_1_ & 1) == 0) {
+                            func.1000e7204(&s, arg2, CONCAT44(in_d2, in_s2), in_x3, in_x4, in_x5);
+                            func.1000e76bc(&s);
+                        }
+                        iVar2 = var_418h;
+                        if ((uint8_t)s == 1) {
+                            if (*(char *)(var_418h + 0x10) == '\x01') {
+                                uVar3 = 0;
+                                puVar6 = &uStack_200;
+                                do {
+                                    if ((*(uint8_t *)(puVar6 + 2) & 1) == 0) {
+                                        fVar8 = 6.283185;
+                                        fVar7 = (float)__sincosf_stret(((float)(uVar3 & 0xffffffff) * 6.283185) / 10.0);
+                                        fVar9 = (float)NEON_fmadd(fVar8, 0x40800000, *(undefined4 *)iVar2);
+                                        *(float *)puVar6 = fVar9;
+                                        in_s2 = (float)NEON_fmadd(fVar7, 0x40800000, *(undefined4 *)(iVar2 + 4));
+                                        *(float *)((int64_t)puVar6 + 4) = in_s2;
+                                        puVar6[1] = CONCAT44(fVar7 * (float)((uint64_t)uVar10 >> 0x20), 
+                                                             fVar8 * (float)uVar10);
+                                        *(undefined *)(puVar6 + 2) = 1;
+                                        if (fVar9 <= 800.0) goto code_r0x0001000e9674;
+code_r0x0001000e967c:
+                                        if ((600.0 < in_s2) || (in_s2 < 0.0)) {
+                                            *(undefined *)(iVar2 + 0x10) = 0;
+                                        }
+                                    } else {
+                                        fVar9 = (float)puVar6[1] + (float)*puVar6;
+                                        in_s2 = (float)((uint64_t)puVar6[1] >> 0x20) +
+                                                (float)((uint64_t)*puVar6 >> 0x20);
+                                        *puVar6 = CONCAT44(in_s2, fVar9);
+                                        if (800.0 < fVar9) goto code_r0x0001000e967c;
+code_r0x0001000e9674:
+                                        if (fVar9 < 0.0) goto code_r0x0001000e967c;
+                                    }
+                                    in_d2 = 0;
+                                    uVar3 = uVar3 + 1;
+                                    puVar6 = puVar6 + 4;
+                                } while (uVar3 != 10);
+                            }
+                            iVar1 = IsKeyPressed(0x52);
+                            if (iVar1 != 0) {
+                                func.1000e9110(&s);
+                            }
+                        }
+                        uStackY_460 = CONCAT44(uStackY_460._4_4_, var_474h);
+                        func.1000e7a5c(&s, (int64_t)&var_470h, var_440h);
+                        func.1000e7fd0(&s);
+                        EndDrawing();
+                        iVar1 = WindowShouldClose();
+                    } while (iVar1 == 0);
+                }
+                return 0;
+            }
+            goto code_r0x0001000e96b4;
+        }
+    }
+    func.1000f4f18();
+code_r0x0001000e96b4:
+    fwrite("Spritesheet texture is not valid\n", 0x21, 1, *___stderrp);
+    // WARNING: Subroutine does not return
+    exit(1);
+}
+
